@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Book from '../Book/Book';
 
 const BookShop = () => {
     const [books,setBook]=useState([])
@@ -8,11 +9,19 @@ const BookShop = () => {
         .then(data=>setBook(data))
     },[])
     return (
-        <div>
+        <div style={{display:'grid', gridTemplateColumns:'3fr 1fr'}}>
+            <div style={{display:'grid', gridTemplateColumns:'auto auto auto'}}>
             {
-                books.map(book=><h5>{book.name}</h5>)
+                books.map(book=><Book key={book.id} book={book}></Book>)
             }
+            </div>
+            <div style={{display:'grid', gridTemplateColumns:'auto'}}>
+            <h1>SideBar</h1>
+            </div>
         </div>
+
+        
+        
     );
 };
 
