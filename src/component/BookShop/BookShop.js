@@ -3,14 +3,6 @@ import Book from '../Book/Book';
 import OrderBook from '../OrderBook/OrderBook';
 import './BookShop.css'
 const BookShop = () => {
-    //add cart
-    const [cart,setCart]=useState([])
-    //console.log(cart);
-    const addCart=(book)=>{
-        const objToArr=[...cart,book]
-        setCart(objToArr);
-    }
-    
     //Data Load
     const [books,setBook]=useState([])
     useEffect(()=>{
@@ -19,6 +11,13 @@ const BookShop = () => {
         .then(data=>setBook(data))
     },[])
 
+    //add cart
+    const [cart,setCart]=useState([])
+    //console.log(cart);
+    const addCart=(book)=>{
+        const objToArr=[...cart,book]
+        setCart(objToArr);
+    }
     // Recommended
     const recommend=(cart)=>{
         let radcart=cart[Math.floor(Math.random()*cart.length)]
@@ -61,7 +60,6 @@ const BookShop = () => {
                 <p><strong>Props</strong> is declared in child component it receives passing data as object from parent component, Props is Immutable (is not modified).Props is read-only data.
                     </p>
                 <p><strong>State</strong> Dosen't go parent component to child component, State is mutable (can be modified, State is not only read also can write
-
                 </p>
             </article>
         </div>

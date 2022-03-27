@@ -10,7 +10,7 @@ const Book = ({book,addCart}) => {
             <h3>{name}</h3>
             <p>${price}</p>
             <div className='flex'>
-            <button className='btn' onClick={()=>addCart(book)}>Buy Now  </button>
+            <button className='btn' onClick={()=>addCart(book)}>Buy Now </button>
             <img src="https://raw.githubusercontent.com/tailwindlabs/heroicons/db29d11448c947c42822aca42026a9f14806530d/optimized/solid/shopping-cart.svg" alt="" width={'10%'}/>
             </div>
         </div>
