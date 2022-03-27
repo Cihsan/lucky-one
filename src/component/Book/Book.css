@@ -10,11 +10,16 @@
     padding: 10px;
     background-color: orange;
     color: #fff;
+    border-radius: 5%;
+    border-style: none;
+    cursor: pointer;
 }
 
 .btn:hover{
     background-color: transparent;
     color: black;
+    border:1px solid grey
+
 }
 .flex{
     display: flex;

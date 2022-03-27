@@ -8,18 +8,43 @@
     display:grid;
      grid-template-columns:auto auto auto;
 }
-.cart{
-    display:grid;
-    grid-Template-Columns:auto;
-    justify-items: center
 
+.cartbtn{
+    padding: 10px;
+    background-color: olivedrab;
+    color: #fff;
+    margin: 10px;
+    border-radius: 5%;
+    border-style: none;
+    cursor: pointer;
 }
 
-
-.cart>h1{
+.cartbtn:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+}
+.fullcart{
+    position:relative;
     text-align: center;
 }
+.items{
+    position:sticky; 
+    top:0;
+}
+.items>h2{
+    
+}
+
 /* Responsive Part */
+article{
+    width: 50%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.twoBtn{
+    margin: 50px auto;
+}
 
 @media only screen and (max-width: 768px) {
     .bookshop{
@@ -30,7 +55,7 @@
          grid-template-columns:auto;
     }
 
-    .cart{
+    .fullcart{
         display:none;
         
     }

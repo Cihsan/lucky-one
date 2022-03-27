@@ -19,21 +19,16 @@ const BookShop = () => {
         .then(data=>setBook(data))
     },[])
 
-    // sugest
-    const sugest=(cart)=>{
-        console.log(cart);
+    // Recommended
+    const recommend=(cart)=>{
         let radcart=cart[Math.floor(Math.random()*cart.length)]
-        alert(radcart.name);
+        alert(`You Can Order:-  ${radcart.name}`);
     }
 
-    //reset
-    const [resetCart,setResetCart]=useState([])
+    //Reset
     const reset=(cart)=>{
-        let objToArr=[cart]
-        
-
-        console.log(objToArr);
-
+        let empty=[]
+        setCart(empty)
     }
     return (
         <div className='bookshop' >
@@ -42,18 +37,33 @@ const BookShop = () => {
                 books.map(book=><Book key={book.id} book={book} addCart={addCart}></Book>)
             }
             </div>
-            <div className='cart' >
-            <h1>Cart Item</h1>
-            <div id='items' style={{height:'200px'}}>
-            {
+            <div className='fullcart' >
+                
+            <div className='items'>
+            <h2>Cart</h2>
+                {
                 cart.map(item=><OrderBook key={item.id} item={item}></OrderBook>)
             }
+                <div className='twoBtn'>
+                    <button className='cartbtn' onClick={()=>recommend(cart)}>Recommend</button>
+                    <button className='cartbtn' onClick={()=>reset(cart)}>Reset</button>
+                </div>
             </div>
-             <div>
-                <button onClick={()=>sugest(cart)}>Sugest</button>
-                <button onClick={()=>reset(cart)}>Reset</button>
             </div>
-            </div>
+            <article>
+                <h1>How React Works</h1>
+                <p>React generate <strong>Dynamic HTML</strong> for user interface easy to write code for developer,
+                React generate React Dom which is called <strong>Virtual DOM</strong> for web browser and React native for mobile tabloid other devices,
+                react brought JSX means JavaScript XML which is to convert vanilla javascript, here Babel is working transpiler as converter  
+
+                </p>
+                <h1>Props vs State</h1>
+                <p><strong>Props</strong> is declared in child component it receives passing data as object from parent component, Props is Immutable (is not modified).Props is read-only data.
+                    </p>
+                <p><strong>State</strong> Dosen't go parent component to child component, State is mutable (can be modified, State is not only read also can write
+
+                </p>
+            </article>
         </div>
     );
 };

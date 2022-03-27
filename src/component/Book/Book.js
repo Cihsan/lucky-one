@@ -7,7 +7,7 @@ const Book = ({book,addCart}) => {
     return (
         <div className='booksItem' >
             <img src={img} alt="" width={'50%'}/>
-            <h4>{name}</h4>
+            <h3>{name}</h3>
             <p>${price}</p>
             <div className='flex'>
             <button className='btn' onClick={()=>addCart(book)}>Buy Now  </button>
