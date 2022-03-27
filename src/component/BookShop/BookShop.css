@@ -32,11 +32,9 @@
     position:sticky; 
     top:0;
 }
-.items>h2{
-    
-}
 
-/* Responsive Part */
+
+
 article{
     width: 50%;
     margin-left: 10px;
@@ -45,6 +43,8 @@ article{
 .twoBtn{
     margin: 50px auto;
 }
+
+/* Responsive Part */
 
 @media only screen and (max-width: 768px) {
     .bookshop{
@@ -56,7 +56,7 @@ article{
     }
 
     .fullcart{
-        display:none;
+        display:flex;
         
     }
 }
