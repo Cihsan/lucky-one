@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Book from '../Book/Book';
 import OrderBook from '../OrderBook/OrderBook';
-
+import './BookShop.css'
 const BookShop = () => {
     //add cart
     const [cart,setCart]=useState([])
@@ -36,13 +36,13 @@ const BookShop = () => {
 
     }
     return (
-        <div style={{display:'grid', gridTemplateColumns:'3fr 1fr'}}>
-            <div style={{display:'grid', gridTemplateColumns:'auto auto auto'}}>
+        <div className='bookshop' >
+            <div className='book' >
             {
                 books.map(book=><Book key={book.id} book={book} addCart={addCart}></Book>)
             }
             </div>
-            <div style={{display:'grid', gridTemplateColumns:'auto'}}>
+            <div className='cart' >
             <h1>Cart Item</h1>
             <div id='items' style={{height:'200px'}}>
             {

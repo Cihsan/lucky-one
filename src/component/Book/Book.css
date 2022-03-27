@@ -1,0 +1,30 @@
+.booksItem{
+    border:1px solid grey; 
+    padding:10px;
+    margin:10px;
+    width:300px;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Part */
+
+@media only screen and (max-width: 768px) {
+    .booksItem{
+        width:auto
+    } 
+}

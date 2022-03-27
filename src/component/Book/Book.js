@@ -1,15 +1,19 @@
 import React from 'react';
+import './Book.css'
+
 
 const Book = ({book,addCart}) => {
     const {name,price,img}=book
     return (
-        <div style={{border:'1px solid grey', padding:'10px', margin:'10px',width:'300px'}}>
+        <div className='booksItem' >
             <img src={img} alt="" width={'50%'}/>
             <h4>{name}</h4>
             <p>${price}</p>
-            <button onClick={()=>addCart(book)}>Cart</button>
+            <div className='flex'>
+            <button className='btn' onClick={()=>addCart(book)}>Buy Now  </button>
+            <img src="https://raw.githubusercontent.com/tailwindlabs/heroicons/db29d11448c947c42822aca42026a9f14806530d/optimized/solid/shopping-cart.svg" alt="" width={'10%'}/>
+            </div>
         </div>
     );
 };
-
 export default Book;
