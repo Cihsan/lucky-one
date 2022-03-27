@@ -21,17 +21,19 @@ const BookShop = () => {
 
     // sugest
     const sugest=(cart)=>{
-        const it=cart.map(items=>console.log(Math.random(items.name)))
-        //console.log(cart);
-        //const rand= Math.random(cart)
-//alert(rand);
+        console.log(cart);
+        let radcart=cart[Math.floor(Math.random()*cart.length)]
+        alert(radcart.name);
     }
 
     //reset
+    const [resetCart,setResetCart]=useState([])
     const reset=(cart)=>{
-        cart=[] 
-        console.log(cart);
-        return
+        let objToArr=[cart]
+        
+
+        console.log(objToArr);
+
     }
     return (
         <div style={{display:'grid', gridTemplateColumns:'3fr 1fr'}}>
@@ -42,9 +44,11 @@ const BookShop = () => {
             </div>
             <div style={{display:'grid', gridTemplateColumns:'auto'}}>
             <h1>Cart Item</h1>
+            <div id='items' style={{height:'200px'}}>
             {
                 cart.map(item=><OrderBook key={item.id} item={item}></OrderBook>)
             }
+            </div>
              <div>
                 <button onClick={()=>sugest(cart)}>Sugest</button>
                 <button onClick={()=>reset(cart)}>Reset</button>

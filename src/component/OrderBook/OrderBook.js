@@ -5,8 +5,8 @@ const OrderBook = ({item}) => {
     return (
         <div>
             <div style={{display:'flex'}}>
-            <img src={img} alt="" width={'25%'}/>
-            <p>{name}</p>
+            <img src={img} alt="" width={'10%'}/>
+            <p style={{margin:'10px'}}>{name}</p>
             </div>
            
         </div>

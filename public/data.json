@@ -1,74 +1,86 @@
 [
   {
-    "_id": "623dc77b2f9fb74926f05fd5",
-    "name": "Workman Leon",
-    "img": "http://placehold.it/32x32",
+    "id": "623dc77b2f9fb74926f05fd5",
+    "name": "Kitabuth Tawheed",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Kitabuth%20Tawheed.jpeg",
+    "price": 180
+  },
+  {
+    "id": "623dc77b7707e9f8e5912d75",
+    "name": "Tawheeder Mul Nithimala",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Tawheeder%20Mul%20Nithimala.jpeg",
+    "price": 250
+  },
+  {
+    "id": "623dc77bbce57373cc25e414",
+    "name": "Ar Raheekul Makhthum",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Ar%20Raheekul%20Makhthum.jpeg",
+    "price": 450
+  },
+  {
+    "id": "623dc77b9bd85e3be030ee8b",
+    "name": "Nazat Praptho Doler Akidah",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Nazat%20Praptho%20Doler%20Akidah.jpeg",
+    "price": 160
+  },
+  {
+    "id": "623dc77beff279df241cd535",
+    "name": "Farayez Shikka",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Farayez%20Shikka.jpeg",
+    "price": 70
+  },
+  {
+    "id": "623dc77b138ce0a57695b7ed",
+    "name": "Arkanul Islam",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/arkanul%20islam.jpeg",
+    "price": 80
+  },
+  {
+    "id": "623dc77bd47e97e6b9029c35",
+    "name": "Amanat O Kheyanoth",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Amanat%20O%20Kheyanoth.jpeg",
     "price": 100
   },
   {
-    "_id": "623dc77b7707e9f8e5912d75",
-    "name": "Sheree Mercado",
-    "img": "http://placehold.it/32x32",
-    "price": 192
-  },
-  {
-    "_id": "623dc77bbce57373cc25e414",
-    "name": "Harriett Mcbride",
-    "img": "http://placehold.it/32x32",
+    "id": "623dc77b091d594e6156b3c",
+    "name": "Ohir Gaan",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Ohir%20Gaan.jpeg",
     "price": 260
   },
   {
-    "_id": "623dc77b9bd85e3be030ee8b",
-    "name": "Tami Salinas",
-    "img": "http://placehold.it/32x32",
-    "price": 432
+    "id": "623dc77b091d594e6156eb3e",
+    "name": "Nishiddo Kormokando",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Nishiddo%20Kormokando.jpeg",
+    "price": 110
   },
   {
-    "_id": "623dc77beff279df241cd535",
-    "name": "Ivy Mccoy",
-    "img": "http://placehold.it/32x32",
-    "price": 182
+    "id": "623dc77b091d594e6156eb3",
+    "name": "Vabichar O Somokam",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Vabichar%20O%20Somokam.jpeg",
+    "price": 55
   },
   {
-    "_id": "623dc77b138ce0a57695b7ed",
-    "name": "Tommie Espinoza",
-    "img": "http://placehold.it/32x32",
-    "price": 388
-  },
-  {
-    "_id": "623dc77bd47e97e6b9029c35",
-    "name": "Pittman Juarez",
-    "img": "http://placehold.it/32x32",
-    "price": 163
-  },
-  {
-    "_id": "623dc77b091d594e6156eb3e",
-    "name": "Roberson Miranda",
-    "img": "http://placehold.it/32x32",
-    "price": 83
-  },
-  {
-    "_id": "623dc77ba20f76e722dda81c",
+    "id": "623dc77ba20f76e722dda81c",
     "name": "Eloquent JavaScript",
-    "img": "http://placehold.it/32x32",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Eloquent%20JavaScript.jpg",
     "price": 405
   },
   {
-    "_id": "623dc77b947fb3e13cfa63b9",
+    "id": "623dc77b947fb3e13cfa63b9",
     "name": "JavaScript and JQuery",
-    "img": "http://placehold.it/32x32",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/JavaScript%20and%20JQuery.jpg",
     "price": 475
   },
   {
-    "_id": "623dc77b58e4c72894641eea",
+    "id": "623dc77b58e4c72894641eea",
     "name": "You Don't Know JS Scope and Closures",
-    "img": "http://placehold.it/32x32",
-    "price": 72
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/You%20Don't%20Know%20JS%20Scope%20and%20Closures.jpg",
+    "price": 275
   },
   {
-    "_id": "623dc77b31ec0b7a51048592",
+    "id": "623dc77b31ec0b7a51048592",
     "name": "Speaking JavaScript",
-    "img": "http://placehold.it/32x32",
+    "img": "https://raw.githubusercontent.com/Cihsan/books/main/Speaking%20JavaScript.jpg",
     "price": 450
   }
 ]
